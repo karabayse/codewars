@@ -25,5 +25,7 @@ argument and return it with its digits in descending order.
 Essentially, rearrange the digits to create the highest possible number.
 */
 function descendingOrder(n){
-  
+  // will produce an array of strings, not digits
+  let digits = (""+n).split("");
+  let desc = digits.sort().reverse();
 }
