@@ -29,5 +29,5 @@ function descendingOrder(n){
   let digits = (""+n).split("");
   let descStr = digits.sort().reverse();
   let descInt = parseInt(descStr);
-  return descInt;
+  return descInt;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
 }
