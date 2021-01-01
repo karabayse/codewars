@@ -27,7 +27,10 @@ Essentially, rearrange the digits to create the highest possible number.
 function descendingOrder(n){
   // will produce an array of strings, not digits
   let digits = (""+n).split("");
+  console.log(digits);
   let descStr = digits.sort().reverse();
+  console.log(descStr);
   let descInt = parseInt(descStr);
+  console.log(descInt);
   return descInt;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
 }
