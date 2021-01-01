@@ -34,3 +34,5 @@ function descendingOrder(n){
   console.log(descInt);
   return descInt;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
 }
+
+descendingOrder(123456789);
