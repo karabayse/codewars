@@ -30,9 +30,11 @@ function descendingOrder(n){
   console.log(digits);  // ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   let descStr = digits.sort().reverse();
   console.log(descStr);  // ["9", "8", "7", "6", "5", "4", "3", "2", "1"]
-  let descInt = parseInt(descStr);
-  console.log(descInt);  // 9
-  return descInt;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
+  for (var i = 0; i < descStr.length; i++) {
+    parseInt([i]);
+  }
+  console.log(descStr);  // 9
+  return descStr;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
 }
 
 descendingOrder(123456789);
