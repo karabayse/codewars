@@ -30,11 +30,15 @@ function descendingOrder(n){
   console.log(digits);  // ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
   let descStr = digits.sort().reverse();
   console.log(descStr);  // ["9", "8", "7", "6", "5", "4", "3", "2", "1"]
-  for (var i = 0; i < descStr.length; i++) {
-    parseInt([i]);
-  }
-  console.log(descStr);  // 9
-  return descStr;  // returns 1 instead of 111, 5 instead of 51, 2 instead of 2110
+
+  let nums = descStr.map(function(item) {
+    return parseInt(item, 10);
+  });
+  console.log(nums);  // [9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+  let descOr = nums.join('');
+  let numNums = parseInt(descOr);
+  console.log(numNums);
 }
 
 descendingOrder(123456789);
