@@ -25,20 +25,7 @@ argument and return it with its digits in descending order.
 Essentially, rearrange the digits to create the highest possible number.
 */
 function descendingOrder(n){
-  // will produce an array of strings, not digits
-  let digits = (""+n).split("");
-  console.log(digits);  // ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
-  let descStr = digits.sort().reverse();
-  console.log(descStr);  // ["9", "8", "7", "6", "5", "4", "3", "2", "1"]
-
-  let nums = descStr.map(function(item) {
-    return parseInt(item, 10);
-  });
-  console.log(nums);  // [9, 8, 7, 6, 5, 4, 3, 2, 1]
-
-  let descOr = nums.join('');
-  let numNums = parseInt(descOr);
-  console.log(numNums);
+  return parseInt(String(n).split('').sort().reverse().join(''));
 }
 
 descendingOrder(123456789);
