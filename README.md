@@ -2,4 +2,5 @@
 ### Coding challenges
 
 * Maskify
-* Descending Order 
+* Descending Order
+* Array of Tiers 

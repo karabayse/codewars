@@ -29,3 +29,12 @@ function descendingOrder(n){
 }
 
 descendingOrder(123456789);
+
+
+/*
+Create a function that takes a number and returns an array of strings containing
+the number cut off at each digit.
+*/
+function createArrayOfTiers(num) {
+    return num;
+}
