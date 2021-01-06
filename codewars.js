@@ -37,6 +37,8 @@ the number cut off at each digit.
 Example: 420 should return ["4", "42", "420"]
 */
 function createArrayOfTiers(num) {
+  let subStrNum = num.length;
+  
   let str = num.toString();
   console.log(str);  // "420"
 
