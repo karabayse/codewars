@@ -3,4 +3,5 @@
 
 * Maskify
 * Descending Order
-* Array of Tiers 
+* Array of Tiers
+* Highest and Lowest 
