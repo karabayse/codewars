@@ -53,3 +53,39 @@ function highAndLow(numbers){
 }
 
 highAndLow("1 2 3 4 5");  // return "5 1"
+
+
+// Compare strings anagram
+function solution(a, b) {
+  // split into an array of substrings
+  // sort alphabetically
+  // join returns the array as a string
+  let x = a.split("").sort().join("");
+  console.log(x);  // aehrrt
+  let y = b.split("").sort().join("");
+  console.log(y);  // adehrr
+    console.log(x === y
+        ? a + " and " + b + " are anagrams!"
+        : a + " and " + b + " are not anagrams."
+    );
+}
+
+solution("rather", "harder");
+
+
+function solution2(A, B) {
+    // write your code in JavaScript (Node.js 8.9.4)
+    let counter = 0;
+    let x = A.split("").sort();
+    let y = B.split("").sort();
+
+    x.forEach((n1, index) => {
+        const n2 = y[index];
+        if (n1 !== n2) {
+          counter++;
+        }
+    });
+  console.log(counter);
+}
+
+solution2("rather", "harder")  // ->  2

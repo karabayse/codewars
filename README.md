@@ -4,4 +4,5 @@
 * Maskify
 * Descending Order
 * Array of Tiers
-* Highest and Lowest 
+* Highest and Lowest
+* Anagram 
