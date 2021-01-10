@@ -5,4 +5,5 @@
 * Descending Order
 * Array of Tiers
 * Highest and Lowest
-* Anagram 
+* Anagram
+* Number Check 

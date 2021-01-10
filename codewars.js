@@ -89,3 +89,27 @@ function solution2(A, B) {
 }
 
 solution2("rather", "harder")  // ->  2
+
+
+// Check whether a non-empty array A of N integers (sorted in non-decreasing order)
+// and integer K, checks whether A contains every number from 1 to K at least once
+// and no other numbers
+function fixBug(a, k) {
+  for (var i = 0; i <= a.length; i++) {
+    if (a[i] + 1 < a[i + 1]) {
+      console.log("false");
+    }
+    if (a[0] != 1 && a[n - 1] != k) {
+      console.log("false");
+    } else {
+      console.log("true");
+    }
+  }
+}
+
+fixBug([1, 1, 2, 3, 3]);  // true
+fixBug([1, 1, 3]);  // false
+
+for (var i = 0; i < array.length; i++) {
+  array[i]
+}
