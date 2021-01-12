@@ -6,4 +6,5 @@
 * Array of Tiers
 * Highest and Lowest
 * Anagram
-* Number Check 
+* Number Check
+* Bit Counting 
