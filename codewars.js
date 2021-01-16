@@ -125,5 +125,12 @@ Example: The binary representation of 1234 is 10011010010, so the function
 should return 5 in this case
 */
 let countBits = function(n) {
-  return (n >>> 0).toString(2);
+   let newArr = n.toString(2).split('').map(Number);
+   let count = 0;
+   for (let i = 0; i < newArr.length; i++) {
+       count += newArr[i];
+   }
+   return count;
 };
+
+countBits(1234);

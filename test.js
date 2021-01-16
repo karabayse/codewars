@@ -13,7 +13,7 @@ let countBits = function(n) {
    for (let i = 0; i < newArr.length; i++) {
        count += newArr[i];
    }
-   console.log(count);
+   return count;
 };
 
 countBits(1234);
