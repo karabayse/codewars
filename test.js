@@ -10,10 +10,10 @@ should return 5 in this case
 let countBits = function(n) {
    let newArr = n.toString(2).split('').map(Number);
    let count = 0;
-   for (let i = 0; i < newArr.length; i++)
+   for (let i = 0; i < newArr.length; i++) {
        count += newArr[i];
    }
-   return count;
+   console.log(count);
 };
 
 countBits(1234);
