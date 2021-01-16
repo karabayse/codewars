@@ -1,19 +1,13 @@
 /*
-Write a function that takes an integer as input,
-and returns the number of bits
-that are equal to one in the binary representation of that number.
-You can guarantee that input is non-negative.
+given a string, replace every letter with its position in the alphabet.
 
-Example: The binary representation of 1234 is 10011010010, so the function
-should return 5 in this case
+If anything in the text isn't a letter, ignore it and don't return it.
+
+"a" = 1, "b" = 2, etc.
 */
-let countBits = function(n) {
-   let newArr = n.toString(2).split('').map(Number);
-   let count = 0;
-   for (let i = 0; i < newArr.length; i++) {
-       count += newArr[i];
-   }
-   return count;
-};
+function alphabetPosition(text) {
 
-countBits(1234);
+}
+
+alphabetPosition("The sunset sets at twelve o' clock.")
+// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"

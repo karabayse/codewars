@@ -7,4 +7,5 @@
 * Highest and Lowest
 * Anagram
 * Number Check
-* Bit Counting 
+* Bit Counting
+* Alphabet Position 
