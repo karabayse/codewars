@@ -8,4 +8,5 @@
 * Anagram
 * Number Check
 * Bit Counting
-* Alphabet Position 
+* Alphabet Position
+* Human Readable Seconds 

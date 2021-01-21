@@ -1,18 +1,14 @@
 /*
-Given a string, replace every letter with its position in the alphabet.
-If anything in the text isn't a letter, ignore it and don't return it.
+Write a function, which takes a non-negative integer (seconds) as input and
+returns the time in a human-readable format (HH:MM:SS)
 
-"a" = 1, "b" = 2, etc.
+HH = hours, padded to 2 digits, range: 00 - 99
+MM = minutes, padded to 2 digits, range: 00 - 59
+SS = seconds, padded to 2 digits, range: 00 - 59
+The maximum time never exceeds 359999 (99:59:59)
 */
-function alphabetPosition(text) {
-  let result = "";
-  for (let i = 0; i < text.length; i++) {
-    let code = text.toUpperCase().charCodeAt(i)
-    if (code > 64 && code < 91) result += (code - 64) + " ";
-  }
+function humanReadable(seconds) {
 
-  return result.slice(0, result.length - 1);
 }
 
-alphabetPosition("The sunset sets at twelve o' clock.")
-// "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11"
+humanReadable(1234);
