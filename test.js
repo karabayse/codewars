@@ -8,8 +8,8 @@ SS = seconds, padded to 2 digits, range: 00 - 59
 The maximum time never exceeds 359999 (99:59:59)
 */
 function humanReadable(seconds) {
-  let duration = moment.duration(31536000);
-  return duration;
+  let numseconds = (((seconds % 31536000) % 86400) % 3600) % 60;
+  console.log(numseconds);
 }
 
 humanReadable(1234);
