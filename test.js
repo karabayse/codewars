@@ -10,14 +10,17 @@ The maximum time never exceeds 359999 (99:59:59)
 function humanReadable(seconds) {
   //let numyears = Math.floor(seconds / 31536000);
   //let numdays = Math.floor((seconds % 31536000) / 86400);
-  let numhours = Math.floor(((seconds % 31536000) % 86400) / 3600);
-  let numminutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
-  let numseconds = (((seconds % 31536000) % 86400) % 3600) % 60;
+  let numHours = Math.floor(((seconds % 31536000) % 86400) / 3600);
+  console.log(numHours);  // 0
+  let numMinutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
+  console.log(numMinutes);  // 20
+  let numSeconds = (((seconds % 31536000) % 86400) % 3600) % 60;
+  console.log(numSeconds);  // 34
   return
     //numyears + " years " +  numdays + " days " +
-    numhours + ":" +
-    numminutes + ":" +
-    numseconds;
+    numHours + ":" +
+    numMinutes + ":" +
+    numSeconds;
 }
 
 humanReadable(1234);
