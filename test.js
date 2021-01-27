@@ -16,11 +16,11 @@ function humanReadable(seconds) {
   console.log(numMinutes);  // 20
   let numSeconds = (((seconds % 31536000) % 86400) % 3600) % 60;
   console.log(numSeconds);  // 34
-  return
+  console.log(
     //numyears + " years " +  numdays + " days " +
     numHours + ":" +
     numMinutes + ":" +
-    numSeconds;
+    numSeconds);  // 0:20:34
 }
 
 humanReadable(1234);
