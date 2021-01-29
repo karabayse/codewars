@@ -8,14 +8,24 @@ SS = seconds, padded to 2 digits, range: 00 - 59
 The maximum time never exceeds 359999 (99:59:59)
 */
 function humanReadable(seconds) {
-  //let numyears = Math.floor(seconds / 31536000);
-  //let numdays = Math.floor((seconds % 31536000) / 86400);
-  let numHours = Math.floor(((seconds % 31536000) % 86400) / 3600);
-  console.log(numHours);  // 0
-  let numMinutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
-  console.log(numMinutes);  // 20
-  let numSeconds = (((seconds % 31536000) % 86400) % 3600) % 60;
-  console.log(numSeconds);  // 34
+  var numHours = Math.floor(((seconds % 31536000) % 86400) / 3600);
+
+  if (numHours < 10) {
+    var numHours = '0' + numHours;
+  }
+
+  var numMinutes = Math.floor((((seconds % 31536000) % 86400) % 3600) / 60);
+
+  if (numMinutes < 10) {
+    var numMinutes = '0' + numMinutes;
+  }
+
+  var numSeconds = (((seconds % 31536000) % 86400) % 3600) % 60;
+
+  if (numSeconds < 10) {
+    var numSeconds = '0' + numMinutes;
+  }
+
   console.log(
     //numyears + " years " +  numdays + " days " +
     numHours + ":" +
