@@ -26,11 +26,11 @@ function humanReadable(seconds) {
     var numSeconds = '0' + numMinutes;
   }
 
-  console.log(
+  console.log('
     //numyears + " years " +  numdays + " days " +
     numHours + ":" +
     numMinutes + ":" +
-    numSeconds);  // 0:20:34
+    numSeconds');  // 0:20:34
 }
 
 humanReadable(1234);
